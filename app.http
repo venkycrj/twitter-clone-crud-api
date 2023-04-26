@@ -1,0 +1,66 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "venkycrj",
+  "password": "venky123@",
+  "name": "Sherlok Holmes",
+  "gender": "male"
+}
+####
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "venkycrj",
+  "password": "venky123@"
+}
+####
+
+GET  http://localhost:3000/user/tweets/feed/
+Authorization: BEARER eyJhbGciOiJIUzI1NiJ9.dmVua3ljcmo.FXoRwCgyecXRYAzQqb5Th2HAF4DovYoE6lmZbOu3bBg
+####
+
+GET http://localhost:3000/user/following/
+Authorization: BEARER eyJhbGciOiJIUzI1NiJ9.dmVua3ljcmo.FXoRwCgyecXRYAzQqb5Th2HAF4DovYoE6lmZbOu3bBg
+####
+
+GET  http://localhost:3000/user/followers/
+Authorization: BEARER eyJhbGciOiJIUzI1NiJ9.dmVua3ljcmo.FXoRwCgyecXRYAzQqb5Th2HAF4DovYoE6lmZbOu3bBg
+
+###
+
+GET  http://localhost:3000/tweets/1/
+Authorization: BEARER eyJhbGciOiJIUzI1NiJ9.dmVua3ljcmo.FXoRwCgyecXRYAzQqb5Th2HAF4DovYoE6lmZbOu3bBg
+
+###
+
+GET  http://localhost:3000/tweets/1/likes
+Authorization: BEARER eyJhbGciOiJIUzI1NiJ9.dmVua3ljcmo.FXoRwCgyecXRYAzQqb5Th2HAF4DovYoE6lmZbOu3bBg
+
+###
+
+GET  http://localhost:3000/tweets/3/replies
+Authorization: BEARER eyJhbGciOiJIUzI1NiJ9.dmVua3ljcmo.FXoRwCgyecXRYAzQqb5Th2HAF4DovYoE6lmZbOu3bBg
+
+###
+
+GET  http://localhost:3000/user/tweets
+Authorization: BEARER eyJhbGciOiJIUzI1NiJ9.dmVua3ljcmo.FXoRwCgyecXRYAzQqb5Th2HAF4DovYoE6lmZbOu3bBg
+
+###
+
+POST  http://localhost:3000/user/tweets
+Authorization: BEARER eyJhbGciOiJIUzI1NiJ9.dmVua3ljcmo.FXoRwCgyecXRYAzQqb5Th2HAF4DovYoE6lmZbOu3bBg
+Content-Type: application/json
+
+{
+    "tweet": "The game Mrs.Hudson is on!"
+}
+
+###
+
+DELETE  http://localhost:3000/tweets/19/
+Authorization: BEARER eyJhbGciOiJIUzI1NiJ9.dmVua3ljcmo.FXoRwCgyecXRYAzQqb5Th2HAF4DovYoE6lmZbOu3bBg
+####
